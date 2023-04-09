@@ -1,0 +1,40 @@
+<div class="container-fluid">
+    <div class="row g-3 text-center mt-3">
+        <div class="col-3"></div>
+        <div class="col-6">
+            <div class="card border-5 shadow bg-light bg-gradient">
+                <h5 class="card-title mt-3"><b>Recruiters List</b></h5>
+                <div class="card-body">
+                    <table class="table table-hover table-striped table-success table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Unique Id</th>
+                                <th>Name</th>
+                                <th>email</th>
+                                <th>Location</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let recruiter of recruitersList">
+                                <td>{{recruiter.id}}</td>
+                                <td>{{recruiter.name}}</td>
+                                <td>{{recruiter.email}}</td>
+                                <td>{{recruiter.loaction}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="col-3"></div>
+    </div>
+    <div class="row text-center mt-3">
+        <div class="col-4"></div>
+        <div class="col-4">
+            <button class="btn btn-outline-danger shadow" (click)="goBack()">Go Back</button>
+        </div>
+        <div class="col-4"></div>
+    </div>
+</div>
+
+<!--[{"id":53,"name":"ibm","title":"syseng","email":"ibm@gmail.com","loaction":"Chennai","salary":600000,"role":"create a databse"},-->

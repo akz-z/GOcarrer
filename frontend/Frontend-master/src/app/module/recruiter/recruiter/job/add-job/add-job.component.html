@@ -1,0 +1,38 @@
+<div class="container-fluid overflow-hidden text-center">
+    <h4>Create A new Job Opening</h4>
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6 card bg-light bg-gradient border border-5 shadow">
+            <div class="card-body">
+                <form class="form" [formGroup] = "jobForm">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">Company Name</span>
+                        <input class="form-control" type="text" name="name" id="jobTitle" formControlName="name">
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">Job Title</span>
+                        <input class="form-control" type="text" name="title" id="jobTitle" formControlName="jobTitle">
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">Job Description</span>
+                        <input class="form-control" type="text" name="role" id="jobTitle" formControlName="jobDescription">
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">Salary</span>
+                        <input class="form-control" type="text" name="salary" id="jobTitle" formControlName="salary">
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">Location</span>
+                        <input class="form-control" type="text" name="location" id="jobTitle" formControlName="location">
+                    </div>
+                    <div class="input-group d-grid gap-2 col-6 mx-auto">
+                        <button class="btn btn-outline-primary" type="submit" (click)="onSubmit()">Post Job</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="col-3"></div>
+    </div>
+</div>
+
+

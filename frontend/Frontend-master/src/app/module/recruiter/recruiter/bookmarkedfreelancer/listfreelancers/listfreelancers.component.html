@@ -1,0 +1,34 @@
+<div class="container-fluid">
+    <h3 class="text-center">JOB SEEKER LIST</h3>
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6 card">
+            <table class="table table-striped table-hover table-warning text-center">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th> Name</th>
+                        <th>Username</th>
+                        <th>email</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let freelancer of freelancersList;">
+                        <td>{{freelancer.id}}</td>
+                        <td>{{freelancer.name}}</td>
+                        <td>{{freelancer.username}}</td>
+                        <td>{{freelancer.email}}</td>
+                        <td><button class="btn btn-success" (click)="addBookmark(freelancer.id)">SELECT</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-3"></div>
+    </div>
+</div>
+
+<!--{id: 1, name: 'unni', username: 'unni123', password: '12121333', email: 'unni01@gmail.com', …}
+1
+: 
+{id: 2, name: 'arjunsdsd', username: 'arjunsdfsdf', -->

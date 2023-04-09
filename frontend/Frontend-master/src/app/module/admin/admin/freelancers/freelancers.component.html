@@ -1,0 +1,42 @@
+<div class="container-fluid">
+    <div class="row g-3 text-center mt-3">
+        <div class="col-3"></div>
+        <div class="col-6">
+            <div class="card border-5 shadow bg-light bg-gradient">
+                <h5 class="card-title mt-3"><b>Freelancers List</b></h5>
+                <div class="card-body">
+                    <table class="table table-hover table-striped table-primary table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Unique Id</th>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Username</th>
+                                <th>Contact</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let freelancer of freelancersList">
+                                <td>{{freelancer.id}}</td>
+                                <td>{{freelancer.name}}</td>
+                                <td>{{freelancer.email}}</td>
+                                <td>{{freelancer.username}}</td>
+                                <td>{{freelancer.contact}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="col-3"></div>
+    </div>
+    <div class="row text-center mt-3">
+        <div class="col-4"></div>
+        <div class="col-4">
+            <button class="btn btn-outline-danger shadow" (click)="goBack()">Go Back</button>
+        </div>
+        <div class="col-4"></div>
+    </div>
+</div>
+
+<!--[{"id":1,"name":"unni","username":"unni123","password":"12121333","email":"unni01@gmail.com","contact":872383823,"skills":"java","enabled":true,"jobs":null},-->
